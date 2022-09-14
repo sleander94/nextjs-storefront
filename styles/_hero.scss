@@ -1,0 +1,130 @@
+#hero {
+  position: relative;
+  display: grid;
+  min-height: calc(100vh - 80px);
+  .background-image {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    object-fit: cover;
+    object-position: 50% 0%;
+    filter: brightness(70%);
+  }
+  .content {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 2rem;
+    gap: 2rem;
+    h2 {
+      text-align: center;
+      font-size: 4rem;
+    }
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      .logo-image {
+        border-radius: 50%;
+      }
+      .logo-text {
+        * {
+          text-align: center;
+          font-weight: normal;
+          font-family: 'Roddenberry';
+        }
+        h3 {
+          font-size: 7rem;
+        }
+        h4 {
+          color: $eclipse-pink;
+          font-size: 4rem;
+        }
+      }
+    }
+    .order-actions {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      a {
+        position: relative;
+        width: 260px;
+        padding: 1rem 4rem;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid $eclipse-pink;
+        border-radius: 4px;
+      }
+      .button-image {
+        position: relative;
+        border-radius: 4px;
+        z-index: 1;
+        object-fit: cover;
+        object-position: 50% 50%;
+        filter: brightness(150%);
+      }
+      p {
+        position: relative;
+        z-index: 2;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #hero {
+    .content {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #hero {
+    .content {
+      justify-content: flex-start;
+      gap: 1rem;
+      h2 {
+        font-size: 2rem;
+      }
+      .logo {
+        .logo-text {
+          h3 {
+            font-size: 4rem;
+          }
+          h4 {
+            font-size: 3rem;
+          }
+        }
+      }
+      .order-actions {
+        display: flex;
+        flex-direction: column;
+        grid-template: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #hero {
+    .content {
+      .logo {
+        .logo-text {
+          h4 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
