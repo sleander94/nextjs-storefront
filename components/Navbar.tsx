@@ -20,19 +20,19 @@ const Navbar = () => {
         src="/../public/images/purple-space.jpg"
         alt="outer space background"
         layout="fill"
-        objectFit="cover"
-        objectPosition="20% 20%"
-        priority
+        priority={true}
       ></Image>
       <div className="content">
         <div className="title">
           <Link href="/">
-            <Image
-              src="/../public/logos/eclipse.png"
-              alt="eclipse logo"
-              width={64}
-              height={64}
-            />
+            <a href="/">
+              <Image
+                src="/../public/logos/eclipse.png"
+                alt="eclipse logo"
+                width={64}
+                height={64}
+              />
+            </a>
           </Link>
           <Link href="/">
             <h1>ECLIPSE CANNABIS COMPANY</h1>
