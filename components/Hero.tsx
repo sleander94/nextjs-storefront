@@ -28,25 +28,29 @@ const Hero = () => {
         <h2>VOTED BEST REC SELECTION</h2>
         <div className="order-actions">
           <Link href="/">
-            <a href="">
+            <a href="" className="order-link">
+              <div className="background-gradient">
+                <p>Call Us</p>
+              </div>
               <Image
                 className="button-image"
                 src="/../public/images/stars.png"
                 layout="fill"
                 priority={true}
               ></Image>
-              <p>Call Us</p>
             </a>
           </Link>
           <Link href="/">
-            <a href="">
+            <a href="" className="order-link">
+              <div className="background-gradient">
+                <p>Order Online</p>
+              </div>
               <Image
                 className="button-image"
                 src="/../public/images/stars.png"
                 layout="fill"
                 priority={true}
               ></Image>
-              <p>Order Online</p>
             </a>
           </Link>
         </div>
