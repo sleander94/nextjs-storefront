@@ -41,10 +41,19 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <nav className="desktop">
           <Link className="menu-item" href="/">
-            Home
+            HOME
+          </Link>
+          <Link className="menu-item" href="/">
+            MENU
           </Link>
           <Link className="menu-item" href="/testpage">
-            Test
+            CALL US
+          </Link>
+          <Link href="https://www.google.com/maps/@40.0258735,-105.2870899,17z">
+            <p>
+              933 ALPINE AVE, SUITE 2<br></br>
+              BOULDER, CO 80304
+            </p>
           </Link>
         </nav>
         {/* Mobile Menu */}
@@ -61,16 +70,37 @@ const Navbar = () => {
                 closeMenu();
               }}
             >
-              Home
+              HOME
             </div>
           </Link>
-          <Link id="test-link" className="menu-item" href="/testpage">
+          <Link id="menu-link" className="menu-item" href="/">
             <div
               onClick={() => {
                 closeMenu();
               }}
             >
-              Test
+              MENU
+            </div>
+          </Link>
+          <Link id="phone-link" className="menu-item" href="/">
+            <div
+              onClick={() => {
+                closeMenu();
+              }}
+            >
+              CALL US
+            </div>
+          </Link>
+          <Link id="address-link" className="menu-item" href="/">
+            <div
+              onClick={() => {
+                closeMenu();
+              }}
+            >
+              <p>
+                933 ALPINE AVE<br></br>SUITE 2<br></br>
+                BOULDER, CO 80304
+              </p>
             </div>
           </Link>
         </Menu>
