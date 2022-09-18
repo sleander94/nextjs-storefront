@@ -1,26 +1,44 @@
 #header {
+  z-index: 99;
   position: sticky;
   display: grid;
   top: 0;
   height: 80px;
   width: 100%;
+  background-color: black;
+  border-bottom: 1px solid $eclipse-purple;
   .background-image {
     grid-area: 1 / 1 / 2 / 2;
     position: relative;
     z-index: 1;
+    object-fit: cover;
+    object-position: 25% 27%;
   }
   .content {
     grid-area: 1 / 1 / 2 / 2;
     position: relative;
-    z-index: 999;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     background-color: transparent;
+    text-align: center;
     a {
       color: #fff;
       text-decoration: none;
+      font-size: 1.5rem;
+    }
+    * {
+      white-space: nowrap;
+    }
+    a:hover,
+    p:hover,
+    h1:hover {
+      color: $eclipse-pink;
+    }
+    p:hover {
+      cursor: pointer;
     }
     div.title {
       display: flex;
@@ -29,6 +47,7 @@
       margin-left: 1rem;
     }
     h1 {
+      cursor: pointer;
       font-size: 2.5rem;
       font-weight: normal;
       font-family: 'Roddenberry';
@@ -39,6 +58,19 @@
       align-items: center;
       gap: 2.5rem;
       padding: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #header {
+    .content {
+      nav.desktop {
+        a {
+          font-size: 1.4rem;
+        }
+        gap: 1rem;
+      }
     }
   }
 }
@@ -59,7 +91,7 @@
 @media only screen and (max-width: 390px) {
   #header {
     .content {
-      div.title {
+      .title {
         gap: 1rem;
       }
       h1 {

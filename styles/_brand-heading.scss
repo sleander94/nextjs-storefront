@@ -1,5 +1,6 @@
 #brand-heading {
   border-top: 1px solid $eclipse-purple;
+  margin-top: 0.5rem;
   position: relative;
   display: grid;
   min-height: calc(100vh - 80px);
@@ -24,6 +25,7 @@
       flex-direction: column;
       justify-items: center;
       align-items: center;
+      padding-top: 4rem;
       gap: 2rem;
       #nug-png {
         position: relative;
@@ -33,11 +35,11 @@
         margin-left: 200px;
       }
       .image-ref {
-        opacity: 0;
+        opacity: 1;
         position: relative;
       }
       .image-ref.animation {
-        animation: slide-left 0.5s forwards;
+        animation: slide-left 1.5s forwards;
       }
     }
     .brand-text {
@@ -60,7 +62,7 @@
       }
     }
     .brand-text.animation {
-      animation: slide-right 0.5s forwards;
+      animation: slide-right 1.5s forwards;
     }
   }
 }
@@ -82,7 +84,7 @@
         }
       }
       .brand-text.animation {
-        animation: slide-right 0.5s forwards;
+        animation: slide-up 1.5s forwards;
       }
     }
   }
@@ -92,8 +94,11 @@
   #brand-heading {
     .content {
       flex-direction: column-reverse;
-      gap: 5rem;
+      gap: 1rem;
       padding: 1rem;
+      .brand-images {
+        display: none;
+      }
       .brand-text {
         max-width: none;
         h2 {
@@ -105,52 +110,6 @@
           font-size: 1.5rem;
         }
       }
-      .brand-text.animation {
-        animation: slide-right 0.2s forwards 0s;
-      }
     }
-  }
-  @keyframes slide-left {
-    from {
-      left: -50px;
-      opacity: 0;
-    }
-    to {
-      left: 0px;
-      opacity: 1;
-    }
-  }
-
-  @keyframes slide-right {
-    from {
-      right: -50px;
-      opacity: 0;
-    }
-    to {
-      right: 0px;
-      opacity: 1;
-    }
-  }
-}
-
-@keyframes slide-left {
-  from {
-    left: -200px;
-    opacity: 0;
-  }
-  to {
-    left: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes slide-right {
-  from {
-    right: -200px;
-    opacity: 0;
-  }
-  to {
-    right: 0px;
-    opacity: 1;
   }
 }
