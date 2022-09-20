@@ -16,7 +16,7 @@ const CarouselBrand = ({ src, alt, name, filter }: CarouselBrandProps) => {
             filter: filter ? `${filter}` : undefined,
           }}
           className="brand-logo"
-          src={`/../public/logos/${src}`}
+          src={`/logos/${src}`}
           alt={alt}
           layout="responsive"
           width="100%"

@@ -38,32 +38,32 @@ const StoreCarousel = () => {
         itemClass="carousel-item"
       >
         <StoreCarouselLink
-          src="/../public/images/carousel-flower.jpg"
+          src="/images/carousel-flower.jpg"
           alt="cannabis flower in a glass jar"
           label="Flower"
           href=""
         />
         <StoreCarouselLink
-          src="/../public/images/carousel-wax.jpg"
+          src="/images/carousel-wax.jpg"
           alt="wax cannabis concentrate"
           label="Concentrates"
           href=""
         />
         <StoreCarouselLink
-          src="/../public/images/carousel-edibles.jpg"
+          src="/images/carousel-edibles.jpg"
           alt="cannabis cookies next to nug"
           label="Edibles"
           href=""
         />
         <StoreCarouselLink
-          src="/../public/images/carousel-preroll.jpg"
+          src="/images/carousel-preroll.jpg"
           alt="pre-rolled blunt"
           label="Pre-rolls"
           href=""
           position="20% 0%"
         />
         <StoreCarouselLink
-          src="/../public/images/carousel-glass.jpg"
+          src="/images/carousel-glass.jpg"
           alt="Honeycomb bong"
           label="Glass"
           href=""

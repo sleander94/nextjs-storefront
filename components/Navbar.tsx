@@ -17,7 +17,7 @@ const Navbar = () => {
     <header id="header">
       <Image
         className="background-image"
-        src="/../public/images/purple-space.jpg"
+        src="/images/purple-space.jpg"
         alt="outer space background"
         layout="fill"
         priority={true}
@@ -27,7 +27,7 @@ const Navbar = () => {
           <Link href="/">
             <a href="/">
               <Image
-                src="/../public/logos/eclipse.png"
+                src="/logos/eclipse.png"
                 alt="eclipse logo"
                 width={64}
                 height={64}
@@ -46,15 +46,28 @@ const Navbar = () => {
           <Link className="menu-item" href="/">
             MENU
           </Link>
-          <Link className="menu-item" href="/testpage">
+          <a className="menu-item" href="/testpage">
             CALL US
-          </Link>
-          <Link href="https://www.google.com/maps/@40.0258735,-105.2870899,17z">
+          </a>
+          <a
+            className="address"
+            href="https://www.google.com/maps/@40.0258735,-105.2870899,17z"
+          >
+            <Image
+              style={{
+                filter:
+                  'invert(30%) sepia(42%) saturate(3555%) hue-rotate(313deg) brightness(92%) contrast(101%)',
+              }}
+              src="/location.svg"
+              alt="eclipse logo"
+              width={24}
+              height={24}
+            />
             <p>
               933 ALPINE AVE, SUITE 2<br></br>
               BOULDER, CO 80304
             </p>
-          </Link>
+          </a>
         </nav>
         {/* Mobile Menu */}
         <Menu
@@ -84,6 +97,7 @@ const Navbar = () => {
           </Link>
           <Link id="phone-link" className="menu-item" href="/">
             <div
+              className="phone"
               onClick={() => {
                 closeMenu();
               }}
@@ -93,10 +107,21 @@ const Navbar = () => {
           </Link>
           <Link id="address-link" className="menu-item" href="/">
             <div
+              className="address"
               onClick={() => {
                 closeMenu();
               }}
             >
+              <Image
+                style={{
+                  filter:
+                    'invert(30%) sepia(42%) saturate(3555%) hue-rotate(313deg) brightness(92%) contrast(101%)',
+                }}
+                src="/location.svg"
+                alt="eclipse logo"
+                width={24}
+                height={24}
+              />
               <p>
                 933 ALPINE AVE<br></br>SUITE 2<br></br>
                 BOULDER, CO 80304

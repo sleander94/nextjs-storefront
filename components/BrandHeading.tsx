@@ -49,7 +49,7 @@ const BrandHeading = () => {
     <section id="brand-heading">
       <Image
         className="background-image"
-        src="/../public/images/stars.png"
+        src="/images/stars.png"
         layout="fill"
         priority={true}
       ></Image>
@@ -59,7 +59,7 @@ const BrandHeading = () => {
             <Image
               id="nug-png"
               className="nug"
-              src="/../public/images/nug.png"
+              src="/images/nug.png"
               width={319}
               height={491}
             ></Image>
@@ -72,13 +72,13 @@ const BrandHeading = () => {
           <p>
             When you touch down at Eclipse Cannabis Company, you'll find an
             experience like no other. Our Boulder recreational dispensary offers
-            first class quality products in a laidback, outer space-themed shop.
-            Are you ready for an adventure?
+            first class quality products in a laidback, outer space
+            <span>-</span>themed shop. Are you ready for an adventure?
           </p>
         </div>
       </div>
       <section ref={brandsRef} id="featured-brands">
-        <h2>We Proudly Carry:</h2>
+        <h2>WE PROUDLY CARRY:</h2>
         <Carousel
           swipeable={true}
           draggable={true}
@@ -130,7 +130,7 @@ const BrandHeading = () => {
             filter="invert(99%) sepia(2%) saturate(14%) hue-rotate(188deg) brightness(106%) contrast(100%)"
           />
         </Carousel>
-        <h2>And many more!</h2>
+        <h2>AND MANY MORE!</h2>
       </section>
     </section>
   );

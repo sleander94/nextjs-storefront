@@ -5,7 +5,7 @@ const Testimonials = () => {
     <section id="testimonials">
       <Image
         className="background-image"
-        src="/../public/images/stars.png"
+        src="/images/stars.png"
         layout="fill"
       ></Image>
       <div className="content">
@@ -55,7 +55,7 @@ const Testimonials = () => {
           </div>
           <Image
             className="button-image"
-            src="/../public/images/stars.png"
+            src="/images/stars.png"
             layout="fill"
           ></Image>
         </a>

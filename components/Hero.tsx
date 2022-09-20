@@ -6,7 +6,7 @@ const Hero = () => {
     <section id="hero">
       <Image
         className="background-image"
-        src="/../public/images/blackmarble_2016_americas_composite.png"
+        src="/images/blackmarble_2016_americas_composite.png"
         layout="fill"
         priority={true}
       ></Image>
@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="logo">
           <Image
             className="logo-image"
-            src="/../public/logos/eclipse.png"
+            src="/logos/eclipse.png"
             alt="eclipse logo"
             width={200}
             height={200}
@@ -34,7 +34,7 @@ const Hero = () => {
               </div>
               <Image
                 className="button-image"
-                src="/../public/images/stars.png"
+                src="/images/stars.png"
                 layout="fill"
                 priority={true}
               ></Image>
@@ -47,7 +47,7 @@ const Hero = () => {
               </div>
               <Image
                 className="button-image"
-                src="/../public/images/stars.png"
+                src="/images/stars.png"
                 layout="fill"
                 priority={true}
               ></Image>

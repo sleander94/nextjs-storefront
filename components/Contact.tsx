@@ -27,12 +27,11 @@ const Contact = () => {
   }, []);
   return (
     <section id="contact">
-      <Parallax speed={20} className="background-image">
+      <Parallax speed={25} className="background-image">
         <Image
-          src="/../public/images/galaxy-gafb533421_1920.jpg"
+          src="/images/pexels-pixabay-2150.jpg"
           layout="fill"
           objectFit="cover"
-          objectPosition="50% 80%"
           priority
         ></Image>
       </Parallax>
