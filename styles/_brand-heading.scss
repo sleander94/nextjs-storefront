@@ -1,6 +1,5 @@
 #brand-heading {
   border-top: 1px solid $eclipse-purple;
-  margin-top: 0.5rem;
   position: relative;
   display: grid;
   min-height: calc(100vh - 80px);
@@ -92,6 +91,7 @@
 
 @media only screen and (max-width: 700px) {
   #brand-heading {
+    margin-top: 0.5rem;
     .content {
       flex-direction: column-reverse;
       gap: 1rem;
@@ -102,12 +102,12 @@
       .brand-text {
         max-width: none;
         h2 {
-          font-size: 3rem;
+          font-size: 2.5rem;
           color: $eclipse-pink;
         }
         p {
           margin-top: 2rem;
-          font-size: 1.5rem;
+          font-size: 1.3rem;
         }
       }
     }

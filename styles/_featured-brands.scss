@@ -1,6 +1,6 @@
 #featured-brands {
   border-bottom: 1px solid $eclipse-purple;
-  padding: 2rem 0;
+  padding: 4rem 0rem;
   position: relative;
   z-index: 2;
   min-height: 30vh;
@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 3rem;
+    padding: 0rem 3rem;
     h3 {
       font-size: 1.5rem;
       white-space: nowrap;
@@ -35,18 +35,18 @@
 @media only screen and (max-width: 1024px) {
   #featured-brands {
     .brand {
-      padding: 0px 2rem;
-      h3 {
-        font-size: 1rem;
-      }
+      padding: 0rem 2rem;
     }
   }
 }
 
 @media only screen and (max-width: 640px) {
   #featured-brands {
+    h2 {
+      font-size: 2.5rem;
+    }
     .brand {
-      padding: 0px 1rem;
+      padding: 0rem 1rem;
       h3 {
         font-size: 1rem;
       }

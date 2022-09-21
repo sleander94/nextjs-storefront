@@ -45,7 +45,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   border: 1px solid $eclipse-purple;
   border-right: none;
   background-position: right;
-  padding: 2.5em 1.5em 0;
+  padding: 3rem 1rem;
   font-size: 1.15em;
 }
 
@@ -66,9 +66,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
     border-radius: 4px;
     font-size: 1.5rem;
   }
-  p {
-    font-size: 1rem;
+  .address {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 0.85rem;
+    }
   }
+
   div:hover,
   p:hover {
     color: $eclipse-pink;

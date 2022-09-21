@@ -71,7 +71,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   border: 1px solid #47008e;
   border-right: none;
   background-position: right;
-  padding: 2.5em 1.5em 0;
+  padding: 3rem 1rem;
   font-size: 1.15em;
 }
 
@@ -93,8 +93,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   border-radius: 4px;
   font-size: 1.5rem;
 }
-.bm-item-list p {
-  font-size: 1rem;
+.bm-item-list .address {
+  display: flex;
+  justify-content: space-between;
+}
+.bm-item-list .address p {
+  font-size: 0.85rem;
 }
 .bm-item-list div:hover,
 .bm-item-list p:hover {
@@ -145,9 +149,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-align: center;
 }
 #header .content a {
+  display: flex;
+  gap: 0.5rem;
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
+}
+#header .content a p {
+  font-size: 1rem;
 }
 #header .content * {
   white-space: nowrap;
@@ -155,6 +164,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 #header .content a:hover,
 #header .content p:hover,
 #header .content h1:hover {
+  color: #ed2a79;
+}
+#header .content a:hover *,
+#header .content p:hover *,
+#header .content h1:hover * {
   color: #ed2a79;
 }
 #header .content p:hover {
@@ -365,7 +379,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 #brand-heading {
   border-top: 1px solid #47008e;
-  margin-top: 0.5rem;
   position: relative;
   display: grid;
   min-height: calc(100vh - 80px);
@@ -457,6 +470,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 @media only screen and (max-width: 700px) {
+  #brand-heading {
+    margin-top: 0.5rem;
+  }
   #brand-heading .content {
     flex-direction: column-reverse;
     gap: 1rem;
@@ -469,17 +485,17 @@ Note: Beware of modifying this element as it can break the animations - you shou
     max-width: none;
   }
   #brand-heading .content .brand-text h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #ed2a79;
   }
   #brand-heading .content .brand-text p {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 #featured-brands {
   border-bottom: 1px solid #47008e;
-  padding: 2rem 0;
+  padding: 4rem 0rem;
   position: relative;
   z-index: 2;
   min-height: 30vh;
@@ -501,7 +517,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0px 3rem;
+  padding: 0rem 3rem;
 }
 #featured-brands .brand h3 {
   font-size: 1.5rem;
@@ -515,15 +531,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 @media only screen and (max-width: 1024px) {
   #featured-brands .brand {
-    padding: 0px 2rem;
-  }
-  #featured-brands .brand h3 {
-    font-size: 1rem;
+    padding: 0rem 2rem;
   }
 }
 @media only screen and (max-width: 640px) {
+  #featured-brands h2 {
+    font-size: 2.5rem;
+  }
   #featured-brands .brand {
-    padding: 0px 1rem;
+    padding: 0rem 1rem;
   }
   #featured-brands .brand h3 {
     font-size: 1rem;
@@ -536,6 +552,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   overflow: hidden;
   text-align: center;
   background-color: black;
+  border-bottom: 1px solid #47008e;
 }
 #contact .background-image {
   grid-area: 1/1/2/2;
@@ -546,16 +563,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 #contact .content {
   grid-area: 1/1/2/2;
+  justify-self: center;
   position: relative;
   display: grid;
   justify-items: center;
   align-items: center;
   color: white;
-  padding: 2rem;
+  padding: 6rem 2rem;
+  gap: 8rem;
 }
 #contact .content h2 {
   grid-area: 1/1/2/3;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #ed2a79;
 }
 #contact .content h2.animation {
@@ -593,8 +612,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 #contact .content iframe {
   grid-area: 2/2/5/3;
   height: 100%;
+  min-height: 450px;
   max-height: 450px;
   width: 100%;
+  min-width: 600px;
   max-width: 600px;
   border-radius: 4px;
   border: 2px solid #ed2a79;
@@ -607,10 +628,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 @media only screen and (max-width: 1024px) {
   #contact .content {
     gap: 2rem;
+    padding-top: 4rem;
     padding-bottom: 4rem;
   }
   #contact .content h2 {
     grid-area: 1/1/2/2;
+    font-size: 2.5rem;
   }
   #contact .content h4 {
     font-size: 1.5rem;
@@ -626,8 +649,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
   #contact .content iframe {
     grid-area: 5/1/6/2;
+    min-height: 0px;
     max-height: 200px;
     width: auto;
+    min-width: 0px;
     max-width: 90vw;
     margin-top: 2rem;
   }
@@ -642,8 +667,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 #store-carousel {
   background-color: black;
-  border-top: 1px solid #ed2a79;
-  border-bottom: 1px solid #ed2a79;
+  border-top: 1px solid #47008e;
+  border-bottom: 1px solid #47008e;
 }
 
 .carousel-item {
@@ -696,7 +721,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: flex;
   flex-direction: column;
   z-index: 2;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 #testimonials .content h2 {
   color: #ed2a79;
@@ -800,6 +825,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
      object-fit: cover;
   -o-object-position: 25% 27%;
      object-position: 25% 27%;
+  filter: brightness(70%);
 }
 #footer .content {
   max-height: 80px;
@@ -807,15 +833,385 @@ Note: Beware of modifying this element as it can break the animations - you shou
   position: relative;
   z-index: 2;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  text-align: center;
 }
 #footer .content .title {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
+#footer .content a {
+  display: flex;
+  gap: 0.5rem;
+  text-decoration: none;
+}
 
+@media only screen and (max-width: 740px) {
+  #footer {
+    height: 160px;
+  }
+  #footer .content {
+    display: grid;
+    max-height: 160px;
+    justify-items: center;
+    align-items: center;
+  }
+  #footer .content .title {
+    grid-area: 1/1/2/3;
+    gap: 1rem;
+  }
+  #footer .content .title h2 {
+    font-size: 1.5rem;
+  }
+  #footer .content p {
+    font-size: 0.85rem;
+  }
+  #footer .content .phone {
+    grid-area: 2/1/3/2;
+  }
+  #footer .content .address {
+    grid-area: 2/2/3/3;
+  }
+}
+#age-verifier {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+#age-verifier .background-image {
+  grid-area: 1/1/2/2;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
+}
+#age-verifier .content {
+  grid-area: 1/1/2/2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 2rem;
+  gap: 2rem;
+  border: 1px solid #ed2a79;
+  border-radius: 4px;
+  background-color: black;
+}
+#age-verifier .content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+#age-verifier .content .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#age-verifier .content .logo .logo-image {
+  border-radius: 50%;
+}
+#age-verifier .content .logo .logo-text * {
+  text-align: center;
+  font-weight: normal;
+}
+#age-verifier .content .logo .logo-text h3 {
+  font-size: 3rem;
+}
+#age-verifier .content .logo .logo-text h4 {
+  color: #ed2a79;
+  font-size: 2.75rem;
+}
+#age-verifier .content .order-actions {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#age-verifier .content .order-actions button {
+  position: relative;
+  z-index: 4;
+  width: 260px;
+  min-height: 50px;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #ed2a79;
+  border-radius: 4px;
+}
+#age-verifier .content .order-actions button:hover {
+  cursor: pointer;
+}
+#age-verifier .content .order-actions .background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+#age-verifier .content .order-actions .background-gradient:hover {
+  background-image: linear-gradient(45deg, rgba(237, 42, 120, 0.5215686275), rgba(71, 0, 142, 0.5254901961));
+}
+#age-verifier .content .order-actions .button-image {
+  position: relative;
+  border-radius: 4px;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  filter: brightness(150%);
+}
+#age-verifier .content .order-actions p {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+@media only screen and (max-width: 640px) {
+  #age-verifier {
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  #age-verifier .content {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  #age-verifier .content h2 {
+    font-size: 1.8rem;
+  }
+  #age-verifier .content .logo .logo-text h3 {
+    font-size: 3rem;
+  }
+  #age-verifier .content .logo .logo-text h4 {
+    font-size: 2rem;
+  }
+  #age-verifier .content .order-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 340px) {
+  #age-verifier .content {
+    padding: 2rem 0.5rem;
+  }
+}
+#loyalty-signup {
+  position: relative;
+  display: grid;
+  min-height: 50vh;
+}
+#loyalty-signup .background-image {
+  grid-area: 1/1/2/2;
+  position: relative;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#loyalty-signup .content {
+  grid-area: 1/1/2/2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 4rem 0;
+  gap: 6rem;
+}
+#loyalty-signup .content h2 {
+  color: #ed2a79;
+  text-align: center;
+  font-size: 3rem;
+}
+#loyalty-signup .content .form-actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+#loyalty-signup .content .form-actions .call-to-action {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+#loyalty-signup .content .form-actions .call-to-action h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+#loyalty-signup .content .form-actions .call-to-action button {
+  position: relative;
+  background: transparent;
+  border: 1px solid #ed2a79;
+  border-radius: 4px;
+  width: 200px;
+  min-height: 30px;
+  padding: 1rem 3rem;
+}
+#loyalty-signup .content .form-actions .call-to-action button .background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+#loyalty-signup .content .form-actions .call-to-action button .background-gradient:hover {
+  cursor: pointer;
+  background-image: linear-gradient(45deg, rgba(237, 42, 120, 0.5215686275), rgba(71, 0, 142, 0.5254901961));
+}
+#loyalty-signup .content .form-actions .call-to-action button .button-image {
+  position: relative;
+  border-radius: 4px;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  filter: brightness(150%);
+}
+#loyalty-signup .content .form-actions .call-to-action button p {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+@media only screen and (max-width: 640px) {
+  #loyalty-signup .content {
+    padding: 0rem;
+    gap: 2rem;
+  }
+  #loyalty-signup .content h2 {
+    font-size: 2rem;
+  }
+  #loyalty-signup .content .form-actions {
+    gap: 2rem;
+    padding: 1rem;
+  }
+  #loyalty-signup .content .form-actions .call-to-action h3 {
+    font-size: 1rem;
+  }
+  #loyalty-signup .content .form-actions .call-to-action button {
+    position: relative;
+    background: transparent;
+    border: 1px solid #ed2a79;
+    border-radius: 4px;
+    width: 200px;
+    min-height: 30px;
+    padding: 1rem 3rem;
+  }
+}
+#overlay {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#overlay .content {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  min-width: 33%;
+}
+#overlay .content .background-image {
+  grid-area: 1/1/2/2;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
+}
+#overlay .content #signup-form {
+  position: relative;
+  grid-area: 1/1/2/2;
+  display: grid;
+  z-index: 2;
+  border: 1px solid #ed2a79;
+  border-radius: 4px;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+#overlay .content #signup-form button {
+  grid-area: 1/1/2/3;
+  justify-self: flex-end;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: -1rem;
+}
+#overlay .content #signup-form button:hover {
+  cursor: pointer;
+}
+#overlay .content #signup-form h1 {
+  grid-area: 2/1/3/3;
+  align-self: flex-start;
+  text-align: center;
+  color: #ed2a79;
+}
+#overlay .content #signup-form label {
+  font-size: 1.3rem;
+}
+#overlay .content #signup-form .form-field {
+  display: flex;
+  flex-direction: column;
+}
+#overlay .content #signup-form .form-field input {
+  border: 1px solid black;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  height: 2rem;
+  font-size: 1.3rem;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+#overlay .content #signup-form .form-field .touched:invalid {
+  border: 1px solid red;
+}
+#overlay .content #signup-form .form-field .error {
+  color: red;
+}
+#overlay .content #signup-form .form-field-check {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+#overlay .content #signup-form .form-field-check input {
+  accent-color: #ed2a79;
+}
+
+@media only screen and (max-width: 640px) {
+  #overlay .content #signup-form .title {
+    font-size: 0.75rem;
+  }
+}
 @-webkit-keyframes slide-left {
   from {
     left: -20px;
@@ -826,7 +1222,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
     opacity: 1;
   }
 }
-
 @keyframes slide-left {
   from {
     left: -20px;
