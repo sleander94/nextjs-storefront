@@ -1,15 +1,23 @@
-import type { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import Layout from '../components/Layout';
 import type { NextPageWithLayout } from './_app';
-import Image from 'next/image';
-import Link from 'next/link';
 import Hero from '../components/Hero';
+import BrandHeading from '../components/BrandHeading';
+import StoreCarousel from '../components/StoreCarousel';
+import Contact from '../components/Contact';
+import Testimonials from '../components/Testimonials';
+import LoyaltySignup from '../components/LoyaltySignup';
 
 const Page: NextPageWithLayout = () => {
   return (
-    <section id="home">
+    <div id="home">
       <Hero />
-    </section>
+      <BrandHeading />
+      <Contact />
+      <Testimonials />
+      <StoreCarousel />
+      <LoyaltySignup />
+    </div>
   );
 };
 
