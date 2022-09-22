@@ -17,7 +17,7 @@ const Navbar = () => {
     <header id="header">
       <Image
         className="background-image"
-        src="/images/purple-space.jpg"
+        src="/images/pink-space.jpg"
         alt="outer space background"
         layout="fill"
         priority={true}
@@ -46,9 +46,15 @@ const Navbar = () => {
           <Link className="menu-item" href="/">
             MENU
           </Link>
-          <a className="menu-item" href="/testpage">
+          <Link className="menu-item" href="/">
+            OUR BRANDS
+          </Link>
+          <Link className="menu-item" href="/">
+            CONTACT
+          </Link>
+          {/*        <a className="menu-item" href="/testpage">
             CALL US
-          </a>
+          </a> */}
           <a
             className="address"
             href="https://www.google.com/maps/@40.0258735,-105.2870899,17z"
@@ -77,55 +83,82 @@ const Navbar = () => {
           onOpen={handleIsOpen}
           onClose={handleIsOpen}
         >
-          <Link id="home-link" className="menu-item" href="/">
+          <Link id="home-link" href="/">
             <div
+              className="menu-item"
               onClick={() => {
                 closeMenu();
               }}
             >
-              HOME
+              <div className="background-gradient">
+                <p>HOME</p>
+              </div>
+              <div className="image-container"></div>
             </div>
           </Link>
-          <Link id="menu-link" className="menu-item" href="/">
+          <Link id="menu-link" href="/">
             <div
+              className="menu-item"
               onClick={() => {
                 closeMenu();
               }}
             >
-              MENU
+              <div className="background-gradient">
+                <p>MENU</p>
+              </div>
+              <div className="image-container"></div>
             </div>
           </Link>
-          <Link id="phone-link" className="menu-item" href="/">
+          <Link id="contact-link" href="/">
             <div
-              className="phone"
+              className="menu-item"
               onClick={() => {
                 closeMenu();
               }}
             >
-              CALL US
+              <div className="background-gradient">
+                <p>CONTACT</p>
+              </div>
+              <div className="image-container"></div>
             </div>
           </Link>
-          <Link id="address-link" className="menu-item" href="/">
+          <Link id="phone-link" href="/">
             <div
-              className="address"
+              className="menu-item"
               onClick={() => {
                 closeMenu();
               }}
             >
-              <Image
-                style={{
-                  filter:
-                    'invert(30%) sepia(42%) saturate(3555%) hue-rotate(313deg) brightness(92%) contrast(101%)',
-                }}
-                src="/location.svg"
-                alt="eclipse logo"
-                width={24}
-                height={24}
-              />
-              <p>
-                933 ALPINE AVE<br></br>SUITE 2<br></br>
-                BOULDER, CO 80304
-              </p>
+              <div className="background-gradient">
+                <p>CALL US</p>
+              </div>
+              <div className="image-container"></div>
+            </div>
+          </Link>
+          <Link id="address-link" href="/">
+            <div
+              className="menu-item address"
+              onClick={() => {
+                closeMenu();
+              }}
+            >
+              <div className="background-gradient">
+                <Image
+                  style={{
+                    filter:
+                      'invert(30%) sepia(42%) saturate(3555%) hue-rotate(313deg) brightness(92%) contrast(101%)',
+                  }}
+                  src="/location.svg"
+                  alt="eclipse logo"
+                  width={16}
+                  height={16}
+                />
+                <p>
+                  933 ALPINE AVE<br></br>SUITE 2<br></br>
+                  BOULDER, CO 80304
+                </p>
+              </div>
+              <div className="image-container"></div>
             </div>
           </Link>
         </Menu>
