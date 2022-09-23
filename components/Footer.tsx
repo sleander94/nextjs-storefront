@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -19,17 +18,17 @@ const Footer = () => {
             }}
             src="/phone.svg"
             alt="phone"
-            width={24}
-            height={24}
+            width={20}
+            height={20}
           />
-          <p>(720) 420-0782</p>
+          <p>720.420.0782</p>
         </a>
         <div className="title">
           <Image
             src="/logos/eclipse.png"
             alt="eclipse logo"
-            width={42}
-            height={42}
+            width={36}
+            height={36}
           />
           <h2>ECLIPSE CANNABIS COMPANY 2022</h2>
         </div>
@@ -44,8 +43,8 @@ const Footer = () => {
             }}
             src="/location.svg"
             alt="location marker"
-            width={24}
-            height={24}
+            width={20}
+            height={20}
           />
           <p>
             933 ALPINE AVE, SUITE 2<br></br>
