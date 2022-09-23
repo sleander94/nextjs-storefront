@@ -71,15 +71,31 @@ Note: Beware of modifying this element as it can break the animations - you shou
       background-color: black;
     }
   }
-  .address {
+  #phone-link {
+    .background-gradient {
+      display: flex;
+      gap: 0.5rem;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  #address-link {
     min-height: 60px;
+    max-width: 95%;
     .background-gradient {
       display: flex;
       gap: 4px;
       p {
         font-size: 0.75rem;
       }
+      *:hover {
+        color: #fff;
+      }
     }
+  }
+  #address-link:hover {
+    color: #fff;
   }
 }
 

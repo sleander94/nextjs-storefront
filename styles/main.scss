@@ -3,13 +3,78 @@ $purple-transparent: #47008e86;
 $eclipse-pink: #ed2a79;
 $pink-transparent: #ed2a7885;
 
+@mixin eclipse-button {
+  position: relative;
+  z-index: 4;
+  width: 260px;
+  min-height: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(45deg, $eclipse-pink, $eclipse-purple);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  .background-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+  }
+  .background-gradient:hover {
+    background-image: linear-gradient(
+      45deg,
+      $pink-transparent,
+      $purple-transparent
+    );
+  }
+  .image-container {
+    position: relative;
+    border-radius: 4px;
+    z-index: 1;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    margin: 1px;
+    .button-image {
+      border-radius: 4px;
+      object-fit: cover;
+      object-position: 50% 50%;
+      filter: brightness(150%);
+    }
+  }
+  p {
+    position: relative;
+    z-index: 3;
+    font-size: 1rem;
+  }
+}
+
+@mixin background-image {
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 1;
+  position: relative;
+  object-fit: cover;
+}
+
+@mixin content {
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 2;
+  position: relative;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roddenberry', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: normal;
@@ -34,19 +99,18 @@ body {
   background-color: black;
 }
 
+@import './age-verifier';
 @import './burger-menu';
 @import './navbar';
+@import './footer';
 @import './hero';
 @import './brand-heading';
-@import './featured-brands';
-@import './contact';
 @import './store-carousel';
 @import './store-carousel-link';
 @import './testimonials';
-@import './footer';
-@import './age-verifier';
 @import './loyalty-signup';
-@import './signup-form';
+@import './contact';
+@import './brands';
 
 @keyframes slide-left {
   from {
