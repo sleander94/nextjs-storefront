@@ -22,7 +22,11 @@ const Layout = ({ children }: LayoutProps) => {
       {isOver21 && (
         <>
           <Head>
-            <title>Layouts Example</title>
+            <title>Eclipse Cannabis Company</title>
+            <meta
+              name="viewport"
+              content="initial-scale=1.0, width=device-width"
+            />
           </Head>
           <Navbar />
           <ParallaxProvider>
