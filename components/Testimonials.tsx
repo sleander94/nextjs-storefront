@@ -9,40 +9,46 @@ const Testimonials = () => {
         layout="fill"
       ></Image>
       <div className="content">
-        <h2>WE ARE HIGHLY RECOMMENDED</h2>
+        <h2>WE'RE HIGHLY RECOMMENDED</h2>
         <div className="reviews">
-          <div className="review">
-            <p>
-              "Rylie, kyle, caleb are the best in town. If you’re not getting
-              concentrates and flower from here you are truly doing yourself a
-              disservice. Check them out. I’ve lived in Boulder 13 years this
-              place is my go to.
-            </p>
-            <p className="sig">
-              <span>-</span> Ronald W.
-            </p>
+          <div className="border">
+            <div className="review">
+              <p>
+                "Rylie, kyle, caleb are the best in town. If you’re not getting
+                concentrates and flower from here you are truly doing yourself a
+                disservice. Check them out. I’ve lived in Boulder 13 years this
+                place is my go to.
+              </p>
+              <p className="sig">
+                <span>-</span> Ronald W.
+              </p>
+            </div>
           </div>
-          <div className="review">
-            <p>
-              "Always a pleasure coming into eclipse! The staff team never fails
-              to provide excellent customer service and knowledge on all
-              products. I’ve been coming here since I’ve turned 21 and don’t
-              plan on making any other dispensary my go-to."{' '}
-            </p>
-            <p className="sig">
-              <span>-</span> Jeremy S.
-            </p>
+          <div className="border">
+            <div className="review">
+              <p>
+                "Always a pleasure coming into eclipse! The staff team never
+                fails to provide excellent customer service and knowledge on all
+                products. I’ve been coming here since I’ve turned 21 and don’t
+                plan on making any other dispensary my go-to."{' '}
+              </p>
+              <p className="sig">
+                <span>-</span> Jeremy S.
+              </p>
+            </div>
           </div>
-          <div className="review">
-            <p>
-              "Eclipse is, without a doubt in my mind, the best spot in Boulder!
-              They have the best selection of flower and concentrates at the
-              best prices, hands down. After discovering this gem, I refuse to
-              go to any other dispo in Boulder."
-            </p>
-            <p className="sig">
-              <span>-</span> Matthew W.
-            </p>
+          <div className="border">
+            <div className="review">
+              <p>
+                "Eclipse is, without a doubt in my mind, the best spot in
+                Boulder! They have the best selection of flower and concentrates
+                at the best prices, hands down. After discovering this gem, I
+                refuse to go to any other dispo in Boulder."
+              </p>
+              <p className="sig">
+                <span>-</span> Matthew W.
+              </p>
+            </div>
           </div>
         </div>
         <a
@@ -53,11 +59,13 @@ const Testimonials = () => {
           <div className="background-gradient">
             <p>More Reviews</p>
           </div>
-          <Image
-            className="button-image"
-            src="/images/stars.png"
-            layout="fill"
-          ></Image>
+          <div className="image-container">
+            <Image
+              className="button-image"
+              src="/images/stars.png"
+              layout="fill"
+            ></Image>
+          </div>
         </a>
       </div>
     </section>
