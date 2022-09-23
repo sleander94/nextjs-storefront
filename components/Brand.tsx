@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-export interface CarouselBrandProps {
+export interface BrandProps {
   src: string;
   name: string;
   link: string;
   filter?: string;
 }
 
-const Brand = ({ src, name, link, filter }: CarouselBrandProps) => {
+const Brand = ({ src, name, link, filter }: BrandProps) => {
   return (
     <a href={link} target="_blank" className="brand" id={name}>
       <div className="brand-image">
