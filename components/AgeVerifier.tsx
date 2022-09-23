@@ -45,6 +45,7 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
                 <Image
                   className="button-image"
                   src="/images/stars.png"
+                  alt=""
                   layout="fill"
                   priority={true}
                 ></Image>
@@ -58,6 +59,7 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
                 <Image
                   className="button-image"
                   src="/images/stars.png"
+                  alt=""
                   layout="fill"
                   priority={true}
                 ></Image>
