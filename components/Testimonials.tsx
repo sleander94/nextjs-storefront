@@ -6,6 +6,7 @@ const Testimonials = () => {
       <Image
         className="background-image"
         src="/images/stars.png"
+        alt=""
         layout="fill"
       ></Image>
       <div className="content">
@@ -63,6 +64,7 @@ const Testimonials = () => {
             <Image
               className="button-image"
               src="/images/stars.png"
+              alt=""
               layout="fill"
             ></Image>
           </div>

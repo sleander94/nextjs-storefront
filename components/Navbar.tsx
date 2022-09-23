@@ -18,7 +18,7 @@ const Navbar = () => {
       <Image
         className="background-image"
         src="/images/purple-space.jpg"
-        alt="outer space background"
+        alt=""
         layout="fill"
         priority={true}
       ></Image>
@@ -26,12 +26,7 @@ const Navbar = () => {
         <div className="title">
           <Link href="/">
             <a href="/">
-              <Image
-                src="/logos/eclipse.png"
-                alt="eclipse logo"
-                width={64}
-                height={64}
-              />
+              <Image src="/logos/eclipse.png" alt="" width={64} height={64} />
             </a>
           </Link>
           <Link href="/">
@@ -63,7 +58,7 @@ const Navbar = () => {
                   'invert(30%) sepia(42%) saturate(3555%) hue-rotate(313deg) brightness(92%) contrast(101%)',
               }}
               src="/location.svg"
-              alt="eclipse logo"
+              alt="address"
               layout="fixed"
               width={20}
               height={20}
@@ -142,7 +137,7 @@ const Navbar = () => {
                     'invert(30%) sepia(42%) saturate(3555%) hue-rotate(313deg) brightness(92%) contrast(101%)',
                 }}
                 src="/phone.svg"
-                alt="eclipse logo"
+                alt="phone"
                 width={16}
                 height={16}
               />
@@ -163,7 +158,7 @@ const Navbar = () => {
                     'invert(30%) sepia(42%) saturate(3555%) hue-rotate(313deg) brightness(92%) contrast(101%)',
                 }}
                 src="/location.svg"
-                alt="eclipse logo"
+                alt="address"
                 width={16}
                 height={16}
               />

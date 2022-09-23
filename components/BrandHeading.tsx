@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useRef } from 'react';
 
 const BrandHeading = () => {
   return (
@@ -8,6 +7,7 @@ const BrandHeading = () => {
       <Image
         className="background-image"
         src="/images/stars.png"
+        alt=""
         layout="fill"
         priority={true}
       ></Image>
@@ -45,6 +45,7 @@ const BrandHeading = () => {
                 <Image
                   className="button-image"
                   src="/images/stars.png"
+                  alt=""
                   layout="fill"
                   priority={true}
                 ></Image>
@@ -60,6 +61,7 @@ const BrandHeading = () => {
                 <Image
                   className="button-image"
                   src="/images/stars.png"
+                  alt=""
                   layout="fill"
                   priority={true}
                 ></Image>

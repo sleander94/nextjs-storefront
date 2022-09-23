@@ -7,6 +7,7 @@ const Contact = () => {
       <Image
         src="/images/stars.png"
         layout="fill"
+        alt=""
         objectFit="cover"
         priority
       ></Image>
@@ -47,6 +48,7 @@ const Contact = () => {
                   <Image
                     className="button-image"
                     src="/images/stars.png"
+                    alt=""
                     layout="fill"
                     priority={true}
                   ></Image>

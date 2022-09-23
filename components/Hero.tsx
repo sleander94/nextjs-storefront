@@ -7,6 +7,7 @@ const Hero = () => {
       <Image
         className="background-image"
         src="/images/blackmarble_2016_americas_composite.png"
+        alt=""
         layout="fill"
         priority={true}
       ></Image>
@@ -15,7 +16,7 @@ const Hero = () => {
           <Image
             className="logo-image"
             src="/logos/eclipse.png"
-            alt="eclipse logo"
+            alt=""
             width={200}
             height={200}
             priority={true}
@@ -36,6 +37,7 @@ const Hero = () => {
                 <Image
                   className="button-image"
                   src="/images/stars.png"
+                  alt=""
                   layout="fill"
                   priority={true}
                 ></Image>
@@ -51,6 +53,7 @@ const Hero = () => {
                 <Image
                   className="button-image"
                   src="/images/stars.png"
+                  alt=""
                   layout="fill"
                   priority={true}
                 ></Image>

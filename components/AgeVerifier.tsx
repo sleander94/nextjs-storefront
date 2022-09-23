@@ -10,6 +10,7 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
       <Image
         className="background-image"
         src="/images/stars.png"
+        alt=""
         layout="fill"
         priority={true}
       ></Image>

@@ -6,7 +6,7 @@ const Footer = () => {
       <Image
         className="background-image"
         src="/images/purple-space.jpg"
-        alt="outer space background"
+        alt=""
         layout="fill"
       ></Image>
       <div className="content">
@@ -24,12 +24,7 @@ const Footer = () => {
           <p>720.420.0782</p>
         </a>
         <div className="title">
-          <Image
-            src="/logos/eclipse.png"
-            alt="eclipse logo"
-            width={36}
-            height={36}
-          />
+          <Image src="/logos/eclipse.png" alt="" width={36} height={36} />
           <h2>ECLIPSE CANNABIS COMPANY 2022</h2>
         </div>
         <a
@@ -42,7 +37,7 @@ const Footer = () => {
                 'invert(30%) sepia(42%) saturate(3555%) hue-rotate(313deg) brightness(92%) contrast(101%)',
             }}
             src="/location.svg"
-            alt="location marker"
+            alt="address"
             width={20}
             height={20}
           />

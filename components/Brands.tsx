@@ -8,6 +8,7 @@ const Brands = () => {
       <Image
         className="background-image"
         src="/images/stars.png"
+        alt=""
         layout="fill"
         priority={true}
       ></Image>
@@ -43,6 +44,7 @@ const Brands = () => {
                 <Image
                   className="button-image"
                   src="/images/stars.png"
+                  alt=""
                   layout="fill"
                   priority={true}
                 ></Image>
