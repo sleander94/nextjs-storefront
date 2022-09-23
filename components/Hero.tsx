@@ -32,12 +32,14 @@ const Hero = () => {
               <div className="background-gradient">
                 <p>Call Us</p>
               </div>
-              <Image
-                className="button-image"
-                src="/images/stars.png"
-                layout="fill"
-                priority={true}
-              ></Image>
+              <div className="image-container">
+                <Image
+                  className="button-image"
+                  src="/images/stars.png"
+                  layout="fill"
+                  priority={true}
+                ></Image>
+              </div>
             </a>
           </Link>
           <Link href="/">
@@ -45,12 +47,14 @@ const Hero = () => {
               <div className="background-gradient">
                 <p>Order Online</p>
               </div>
-              <Image
-                className="button-image"
-                src="/images/stars.png"
-                layout="fill"
-                priority={true}
-              ></Image>
+              <div className="image-container">
+                <Image
+                  className="button-image"
+                  src="/images/stars.png"
+                  layout="fill"
+                  priority={true}
+                ></Image>
+              </div>
             </a>
           </Link>
         </div>
