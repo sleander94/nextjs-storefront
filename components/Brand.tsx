@@ -2,22 +2,22 @@ import Image from 'next/image';
 
 export interface CarouselBrandProps {
   src: string;
-  alt: string;
   name: string;
+  link: string;
   filter?: string;
 }
 
-const CarouselBrand = ({ src, alt, name, filter }: CarouselBrandProps) => {
+const Brand = ({ src, name, link, filter }: CarouselBrandProps) => {
   return (
-    <div className="brand">
-      <div className="carousel-image">
+    <a href={link} target="_blank" className="brand" id={name}>
+      <div className="brand-image">
         <Image
           style={{
             filter: filter ? `${filter}` : undefined,
           }}
           className="brand-logo"
           src={`/logos/${src}`}
-          alt={alt}
+          alt=""
           layout="responsive"
           width="100%"
           height="100%"
@@ -27,8 +27,8 @@ const CarouselBrand = ({ src, alt, name, filter }: CarouselBrandProps) => {
         ></Image>
       </div>
       <h3>{name}</h3>
-    </div>
+    </a>
   );
 };
 
-export default CarouselBrand;
+export default Brand;
