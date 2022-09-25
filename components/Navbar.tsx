@@ -25,13 +25,15 @@ const Navbar = () => {
       <div className="content">
         <div className="title">
           <Link href="/">
-            <Image
-              className="logo"
-              src="/logos/eclipse.png"
-              alt=""
-              width={64}
-              height={64}
-            />
+            <a>
+              <Image
+                className="logo"
+                src="/logos/eclipse.png"
+                alt=""
+                width={64}
+                height={64}
+              />
+            </a>
           </Link>
           <Link href="/">
             <h1>ECLIPSE CANNABIS COMPANY</h1>
