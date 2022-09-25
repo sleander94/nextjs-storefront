@@ -10,15 +10,15 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  const [isOver21, setIsOver21] = useState<boolean>(true);
+  const [isOver21, setIsOver21] = useState<boolean>();
 
   useEffect(() => {
     const ver = sessionStorage.getItem('eclipseOver21');
-    if (ver !== 'true') setIsOver21(false);
+    ver !== 'true' ? setIsOver21(false) : setIsOver21(true);
   }, []);
   return (
     <>
-      {!isOver21 && <AgeVerifier setIsOver21={setIsOver21} />}
+      {isOver21 === false && <AgeVerifier setIsOver21={setIsOver21} />}
       {isOver21 && (
         <>
           <Head>
