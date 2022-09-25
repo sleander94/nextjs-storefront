@@ -54,6 +54,9 @@
       align-items: center;
       gap: 2rem;
       margin-left: 1rem;
+      .logo:hover {
+        cursor: pointer;
+      }
     }
     h1 {
       cursor: pointer;
