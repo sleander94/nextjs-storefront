@@ -39,7 +39,7 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
               }}
             >
               <div className="background-gradient">
-                <p>I'm over 21</p>
+                <p>I&apos;m over 21</p>
               </div>
               <div className="image-container">
                 <Image
@@ -53,7 +53,7 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
             </button>
             <button onClick={() => history.back()}>
               <div className="background-gradient">
-                <p>I'm under 21</p>
+                <p>I&apos;m under 21</p>
               </div>
               <div className="image-container">
                 <Image

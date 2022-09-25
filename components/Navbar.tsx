@@ -25,9 +25,13 @@ const Navbar = () => {
       <div className="content">
         <div className="title">
           <Link href="/">
-            <a href="/">
-              <Image src="/logos/eclipse.png" alt="" width={64} height={64} />
-            </a>
+            <Image
+              className="logo"
+              src="/logos/eclipse.png"
+              alt=""
+              width={64}
+              height={64}
+            />
           </Link>
           <Link href="/">
             <h1>ECLIPSE CANNABIS COMPANY</h1>
@@ -51,6 +55,7 @@ const Navbar = () => {
             className="address"
             href="https://www.google.com/maps/place/Eclipse+Cannabis+Company/@40.0258735,-105.2870899,17z/data=!3m1!4b1!4m5!3m4!1s0x876bee9945ec4419:0x521980b3bd00abdd!8m2!3d40.0258735!4d-105.2849012"
             target="_blank"
+            rel="noreferrer"
           >
             <Image
               style={{
@@ -129,7 +134,7 @@ const Navbar = () => {
               <div className="image-container"></div>
             </div>
           </Link>
-          <a id="phone-link" href="/" className="menu-item">
+          <a id="phone-link" href="tel:7204200782" className="menu-item">
             <div className="background-gradient">
               <Image
                 style={{
@@ -148,6 +153,7 @@ const Navbar = () => {
           <a
             href="https://www.google.com/maps/place/Eclipse+Cannabis+Company/@40.0258735,-105.2870899,17z/data=!3m1!4b1!4m5!3m4!1s0x876bee9945ec4419:0x521980b3bd00abdd!8m2!3d40.0258735!4d-105.2849012"
             target="_blank"
+            rel="noreferrer"
             id="address-link"
             className="menu-item"
           >

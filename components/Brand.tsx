@@ -9,7 +9,7 @@ export interface BrandProps {
 
 const Brand = ({ src, name, link, filter }: BrandProps) => {
   return (
-    <a href={link} target="_blank" className="brand" id={name}>
+    <a href={link} target="_blank" rel="noreferrer" className="brand" id={name}>
       <div className="brand-image">
         <Image
           style={{

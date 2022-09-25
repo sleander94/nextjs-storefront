@@ -15,8 +15,8 @@ const Brands = () => {
       <div className="content">
         <h2>OUR BRANDS</h2>
         <p>
-          We proudly carry the following brands. Don't see your favorite? Let us
-          know! We're alway looking for great new products.
+          We proudly carry the following brands. Don&apos;t see your favorite?
+          Let us know! We&apos;re alway looking for great new products.
         </p>
         <div className="order-actions">
           <Link href="/">

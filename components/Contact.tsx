@@ -35,6 +35,7 @@ const Contact = () => {
               <a
                 href="https://www.google.com/maps/place/Eclipse+Cannabis+Company/@40.0258735,-105.2870899,17z/data=!3m1!4b1!4m5!3m4!1s0x876bee9945ec4419:0x521980b3bd00abdd!8m2!3d40.0258735!4d-105.2849012"
                 target="_blank"
+                rel="noreferrer"
               >
                 Get Directions
               </a>

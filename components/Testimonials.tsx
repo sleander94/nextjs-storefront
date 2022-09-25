@@ -10,7 +10,7 @@ const Testimonials = () => {
         layout="fill"
       ></Image>
       <div className="content">
-        <h2>WE'RE HIGHLY RECOMMENDED</h2>
+        <h2>WE&apos;RE HIGHLY RECOMMENDED</h2>
         <div className="reviews">
           <div className="border">
             <div className="review">
