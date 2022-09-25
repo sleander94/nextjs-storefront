@@ -18,6 +18,7 @@ span {
   font-family: "Roddenberry";
   font-weight: 400;
   src: url("../public/fonts/roddenberry.ttf") format("truetype");
+  font-display: swap;
 }
 body {
   max-width: 2400px;
