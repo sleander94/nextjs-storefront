@@ -4,7 +4,11 @@ import type { NextPageWithLayout } from './_app';
 import Contact from '../components/Contact';
 
 const ContactPage: NextPageWithLayout = () => {
-  return <Contact />;
+  return (
+    <>
+      <Contact />
+    </>
+  );
 };
 
 ContactPage.getLayout = function getLayout(page: ReactElement) {

@@ -4,7 +4,11 @@ import type { NextPageWithLayout } from './_app';
 import Brands from '../components/Brands';
 
 const BrandsPage: NextPageWithLayout = () => {
-  return <Brands />;
+  return (
+    <>
+      <Brands />
+    </>
+  );
 };
 
 BrandsPage.getLayout = function getLayout(page: ReactElement) {
