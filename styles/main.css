@@ -219,7 +219,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* General sidebar styles */
 .bm-menu {
   background-color: black;
-  background-image: url("../public/images/purple-space.jpg");
+  background-image: url("../public/images/purple-space.webp");
   border: 1px solid #47008e;
   border-right: none;
   background-position: right;
@@ -395,6 +395,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   align-items: center;
   gap: 2rem;
   margin-left: 1rem;
+}
+#header .content div.title .logo:hover {
+  cursor: pointer;
 }
 #header .content h1 {
   cursor: pointer;
@@ -1096,7 +1099,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1000px) {
   #loyalty-signup {
     min-height: 1px;
   }
