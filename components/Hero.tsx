@@ -17,7 +17,7 @@ const Hero = () => {
             className="logo-image"
             src="/logos/eclipse.png"
             alt=""
-            width={200}
+            width={188}
             height={200}
             priority={true}
           ></Image>

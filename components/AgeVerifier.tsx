@@ -30,8 +30,8 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
               <Image
                 className="logo-image"
                 src="/logos/eclipse.png"
-                alt="eclipse logo"
-                width={150}
+                alt=""
+                width={141}
                 height={150}
                 priority={true}
               ></Image>

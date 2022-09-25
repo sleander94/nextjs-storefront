@@ -30,7 +30,7 @@ const Navbar = () => {
                 className="logo"
                 src="/logos/eclipse.png"
                 alt=""
-                width={64}
+                width={60.16}
                 height={64}
               />
             </a>

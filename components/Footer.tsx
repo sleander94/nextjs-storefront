@@ -38,7 +38,7 @@ const Footer = () => {
             }}
             src="/location.svg"
             alt="address"
-            width={20}
+            width={18.8}
             height={20}
           />
           <p>
