@@ -714,9 +714,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   flex-direction: column;
   justify-self: center;
   align-items: center;
-  padding: 2rem;
+  padding: 5rem 2rem;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 #brand-heading .content h2 {
   color: #ed2a79;
@@ -794,6 +794,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   #brand-heading {
     margin-top: 0.5rem;
   }
+  #brand-heading .content {
+    padding: 2rem;
+  }
   #brand-heading .content h2 {
     font-size: 1.7rem;
   }
@@ -870,10 +873,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   position: relative;
   justify-self: center;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
+  padding: 5rem 2rem;
 }
 #testimonials .content h2 {
   color: #ed2a79;
@@ -890,6 +893,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 #testimonials .content .reviews .border {
   border-radius: 4px;
   background: linear-gradient(45deg, #ed2a79, #47008e);
+  height: 100%;
 }
 #testimonials .content .reviews .border .review {
   display: flex;
@@ -962,6 +966,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 @media only screen and (max-width: 1024px) {
+  #testimonials .content {
+    padding: 2rem 0;
+  }
   #testimonials .content .reviews {
     flex-direction: column;
   }
@@ -995,7 +1002,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: flex;
   justify-self: center;
   align-items: center;
-  padding: 8rem 2rem;
+  padding: 5rem 2rem;
   gap: 4rem;
   max-width: 1200px;
 }
@@ -1108,7 +1115,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
     gap: 0rem;
   }
   #loyalty-signup .content .call-to-action {
@@ -1298,17 +1305,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 #brands {
-  border-top: 1px solid #47008e;
   position: relative;
   display: grid;
   min-height: calc(100vh - 160px);
-}
-#brands .background-image {
-  grid-area: 1/1/2/2;
-  z-index: 1;
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: url("../public/images/stars.webp");
 }
 #brands .content {
   grid-area: 1/1/2/2;
@@ -1411,7 +1411,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-decoration: none;
   gap: 0;
   padding: 1rem;
-  /*         border: 1px solid $eclipse-pink; */
   border-radius: 4px;
 }
 #brands .content .brands .brand h3 {
@@ -1425,7 +1424,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 0.5rem;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 800px) {
   #brands .content p {
     font-size: 1rem;
   }
