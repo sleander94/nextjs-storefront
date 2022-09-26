@@ -9,7 +9,6 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
   return (
     <>
       <Head>
-        {' '}
         <title>Eclipse Cannabis Company | Voted Best Rec Selection</title>
         <meta
           name="description"
