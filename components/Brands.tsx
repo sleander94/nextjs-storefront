@@ -5,13 +5,6 @@ import Brand from './Brand';
 const Brands = () => {
   return (
     <section id="brands">
-      <Image
-        className="background-image"
-        src="/images/stars.png"
-        alt=""
-        layout="fill"
-        priority={true}
-      ></Image>
       <div className="content">
         <h2>OUR BRANDS</h2>
         <p>
