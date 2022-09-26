@@ -5,10 +5,10 @@ const Contact = () => {
   return (
     <section id="contact">
       <Image
+        className="background-image"
         src="/images/stars.png"
         layout="fill"
         alt=""
-        objectFit="cover"
         priority
       ></Image>
       <div className="content">
