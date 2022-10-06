@@ -36,7 +36,7 @@ const Navbar = () => {
             </a>
           </Link>
           <Link href="/">
-            <h1>ECLIPSE CANNABIS COMPANY</h1>
+            <h1>EXOSPHERE CANNABIS COMPANY</h1>
           </Link>
         </div>
         {/* Desktop Menu */}
@@ -55,7 +55,7 @@ const Navbar = () => {
           </Link>
           <a
             className="address"
-            href="https://www.google.com/maps/place/Eclipse+Cannabis+Company/@40.0258735,-105.2870899,17z/data=!3m1!4b1!4m5!3m4!1s0x876bee9945ec4419:0x521980b3bd00abdd!8m2!3d40.0258735!4d-105.2849012"
+            href="https://www.google.com/maps/place/Boulder+Creek+Park/@40.0130502,-105.2862344,15.76z/data=!4m5!3m4!1s0x0:0xd0013a2ffa5e8e9e!8m2!3d40.0129569!4d-105.2935381"
             target="_blank"
             rel="noreferrer"
           >
@@ -71,8 +71,9 @@ const Navbar = () => {
               height={20}
             />
             <p>
-              933 ALPINE AVE, SUITE 2<br></br>
-              BOULDER, CO 80304
+              101 Arapahoe Avenue
+              <br />
+              Boulder, CO 80302
             </p>
           </a>
         </nav>
@@ -148,7 +149,7 @@ const Navbar = () => {
                 width={16}
                 height={16}
               />
-              <p>720.420.0782</p>
+              <p>720.555.5555</p>
             </div>
             <div className="image-container"></div>
           </a>
@@ -171,8 +172,9 @@ const Navbar = () => {
                 height={16}
               />
               <p>
-                933 ALPINE AVE<br></br>SUITE 2<br></br>
-                BOULDER, CO 80304
+                101 Arapahoe Avenue
+                <br />
+                Boulder, CO 80302
               </p>
             </div>
             <div className="image-container"></div>

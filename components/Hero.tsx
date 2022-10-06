@@ -22,7 +22,7 @@ const Hero = () => {
             priority={true}
           ></Image>
           <div className="logo-text">
-            <h3>ECLIPSE</h3>
+            <h3>EXOSPHERE</h3>
             <h4>CANNABIS COMPANY</h4>
           </div>
         </div>

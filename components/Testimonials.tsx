@@ -28,7 +28,7 @@ const Testimonials = () => {
           <div className="border">
             <div className="review">
               <p>
-                &quot;Always a pleasure coming into eclipse! The staff team
+                &quot;Always a pleasure coming into exosphere! The staff team
                 never fails to provide excellent customer service and knowledge
                 on all products. I&apos;ve been coming here since I&apos;ve
                 turned 21 and don&apos;t plan on making any other dispensary my
@@ -42,7 +42,7 @@ const Testimonials = () => {
           <div className="border">
             <div className="review">
               <p>
-                &quot;Eclipse is, without a doubt in my mind, the best spot in
+                &quot;Exosphere is, without a doubt in my mind, the best spot in
                 Boulder! They have the best selection of flower and concentrates
                 at the best prices, hands down. After discovering this gem, I
                 refuse to go to any other dispo in Boulder.&quot;
@@ -54,7 +54,7 @@ const Testimonials = () => {
           </div>
         </div>
         <a
-          href="https://www.google.com/maps/place/Eclipse+Cannabis+Company/@40.0258889,-105.287186,17z/data=!4m7!3m6!1s0x0:0x521980b3bd00abdd!8m2!3d40.0258735!4d-105.2849012!9m1!1b1"
+          href="https://www.google.com/maps/place/Boulder+Creek+Park/@40.0130502,-105.2862344,15.76z/data=!4m7!3m6!1s0x0:0xd0013a2ffa5e8e9e!8m2!3d40.0129569!4d-105.2935381!9m1!1b1"
           target="_blank"
           rel="noreferrer"
           className="reviews-link"

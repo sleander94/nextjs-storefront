@@ -9,7 +9,7 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
   return (
     <>
       <Head>
-        <title>Eclipse Cannabis Company | Voted Best Rec Selection</title>
+        <title>Exosphere Cannabis Company | Voted Best Rec Selection</title>
         <meta
           name="description"
           content="Boulder's premier dispensary serving Colorado's best brands. Check out our huge selection of flower, concentrates, edibles, glass and more."
@@ -36,7 +36,7 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
                 priority={true}
               ></Image>
               <div className="logo-text">
-                <h3>ECLIPSE</h3>
+                <h3>EXOSPHERE</h3>
                 <h4>CANNABIS COMPANY</h4>
               </div>
             </div>
@@ -45,7 +45,7 @@ const AgeVerifier = ({ setIsOver21 }: AgeVerifierProps) => {
               <button
                 onClick={() => {
                   setIsOver21(true);
-                  sessionStorage.setItem('eclipseOver21', 'true');
+                  sessionStorage.setItem('exosphereOver21', 'true');
                 }}
               >
                 <div className="background-gradient">

@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
   const [isOver21, setIsOver21] = useState<boolean>();
 
   useEffect(() => {
-    const ver = sessionStorage.getItem('eclipseOver21');
+    const ver = sessionStorage.getItem('exosphereOver21');
     ver !== 'true' ? setIsOver21(false) : setIsOver21(true);
   }, []);
   return (
@@ -22,7 +22,7 @@ const Layout = ({ children }: LayoutProps) => {
       {isOver21 && (
         <>
           <Head>
-            <title>Eclipse Cannabis Company | Voted Best Rec Selection</title>
+            <title>Exosphere Cannabis Company | Voted Best Rec Selection</title>
             <meta
               name="description"
               content="Boulder's premier dispensary serving Colorado's best brands. Check out our huge selection of flower, concentrates, edibles, glass and more."

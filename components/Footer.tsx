@@ -21,15 +21,15 @@ const Footer = () => {
             width={20}
             height={20}
           />
-          <p>720.420.0782</p>
+          <p>720.555.5555</p>
         </a>
         <div className="title">
           <Image src="/logos/eclipse.png" alt="" width={36} height={36} />
-          <h2>ECLIPSE CANNABIS COMPANY 2022</h2>
+          <h2>EXOSPHERE CANNABIS COMPANY 2022</h2>
         </div>
         <a
           className="address"
-          href="https://www.google.com/maps/@40.0258735,-105.2870899,17z"
+          href="https://www.google.com/maps/place/Boulder+Creek+Park/@40.0130502,-105.2862344,15.76z/data=!4m5!3m4!1s0x0:0xd0013a2ffa5e8e9e!8m2!3d40.0129569!4d-105.2935381"
         >
           <Image
             style={{
@@ -42,8 +42,9 @@ const Footer = () => {
             height={20}
           />
           <p>
-            933 ALPINE AVE, SUITE 2<br></br>
-            BOULDER, CO 80304
+            101 Arapahoe Avenue
+            <br />
+            Boulder, CO 80302
           </p>
         </a>
       </div>
